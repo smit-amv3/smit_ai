@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071426">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./favicon.png">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <meta name="description" content="SMIT AI — Personal learning dashboard with ocean-glass loading animations.">
+
+  <title>SMIT AI | Global Command Center</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="brand-row">
+        <a class="brand" href="#home" aria-label="SMIT AI Home">
+          <span class="brand-symbol">S</span>
+          <span class="brand-name">SMIT<span>AI</span></span>
+        </a>
+        <label class="theme-switch" aria-label="Toggle deep dark mode" title="Dark mode">
+          <input id="smitThemeToggle" type="checkbox" role="switch" aria-label="Dark mode">
+          <span class="theme-slider">
+            <span class="theme-glow"></span>
+            <span class="theme-icon theme-icon-on" aria-hidden="true">☾</span>
+            <span class="theme-icon theme-icon-off" aria-hidden="true">☀</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="side-label">منوی اصلی / MAIN MENU</div>
+
+      <nav class="navigation" aria-label="Main navigation">
+
+        <a class="nav-item active" href="#home" data-page="home">
+          <span>⌂</span> خانه <small>HOME</small>
+        </a>
+
+        <a class="nav-item" href="#english" data-page="english">
+          <span>文</span> زبان انگلیسی <small>ENGLISH</small>
+        </a>
+
+        <a class="nav-item" href="#quiz" data-page="quiz">
+          <span>▤</span> آزمون‌ها <small>QUIZZES</small>
+        </a>
+
+      </nav>
+
+      <div class="side-label second-label">ابزارها / TOOLS</div>
+
+      <nav class="navigation" aria-label="Tools navigation">
+
+        <a class="nav-item" href="#assistant" data-page="assistant">
+          <span>✧</span> دستیار هوشمند <small>AI ASSISTANT</small>
+        </a>
+
+        <a class="nav-item" href="#tools" data-page="tools">
+          <span>⌗</span> ابزارها <small>TOOLS</small>
+        </a>
+
+        <a class="nav-item" href="#study-room" data-page="study-room">
+          <span>▣</span> اتاق مطالعه <small>STUDY ROOM</small>
+        </a>
+        <div class="profile-nav-group">
+          <button class="nav-item profile-nav-toggle" id="profileNavToggle" type="button" data-page="profile" aria-expanded="false">
+            <span>◎</span> پروفایل من <small>MY PROFILE</small>
+          </button>
+
+        </div>
+
+      </nav>
+
+      <!-- CONNECT WITH ME: expandable sidebar section -->
+      <section class="sidebar-social" aria-label="Connect with me">
+        <button class="nav-item connect-toggle" id="connectToggle" type="button"
+                aria-expanded="false" aria-controls="connectLinks">
+          <span aria-hidden="true">⌯</span>
+          راه‌های ارتباط با من
+          <small>CONNECT WITH ME</small>
+          <span class="connect-chevron" aria-hidden="true">⌄</span>
+        </button>
+
+        <div class="connect-links" id="connectLinks" hidden>
+          <a class="social-container social-instagram" href="https://instagram.com/smit_amv3"
+             target="_blank" rel="noopener noreferrer" aria-label="Open Instagram @smit_amv3" title="Instagram">
+            <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="17.5" cy="6.8" r="1.2" fill="currentColor"/>
+            </svg>
+            <span class="social-account">@smit_amv3</span>
+          </a>
+          <a class="social-container social-telegram" href="https://t.me/smit_amv3"
+             target="_blank" rel="noopener noreferrer" aria-label="Open Telegram @smit_amv3" title="Telegram">
+            <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M21.7 4.4 18.5 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6 13.5l-4.9-1.5c-1.1-.3-1.1-1.1.2-1.6L20.4 3c.9-.3 1.7.2 1.3 1.4Z"/>
+            </svg>
+            <span class="social-account">@smit_amv3</span>
+          </a>
+        </div>
+      </section>
+
+      <div class="sidebar-bottom">
+        <div class="online-dot"></div>
+        <span>سیستم آماده است</span>
+        <small>SYSTEM ONLINE</small>
+      </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="home">
+
+      <!-- TOPBAR -->
+      <header class="topbar">
+
+        <div>
+          <div class="breadcrumb">
+            SMIT AI <span>/</span> GLOBAL COMMAND CENTER
+          </div>
+
+          <h1>مرکز اطلاعات زنده <span>جهان</span> <small class="sr-bilingual">/ Global Command Center</small></h1>
+        </div>
+
+        <div class="top-actions">
+
+          <button class="icon-button" type="button" aria-label="Notifications">
+            ♧
+          </button>
+
+          <button class="language-button" id="languageBtn" type="button">
+            FA / EN
+          </button>
+
+          <div class="avatar" aria-label="User profile">S</div>
+
+        </div>
+
+      </header>
+
+      <!-- PERSONAL DASHBOARD: CALENDAR + NEWS -->
+      <section class="smit-dashboard-section" id="personal-dashboard" data-home-widget="true">
+        <div class="smit-dashboard-heading">
+          <div><span class="smit-kicker">SMIT AI · GLOBAL COMMAND CENTER</span><h2>مرکز فرماندهی جهانی <small>/ GLOBAL COMMAND CENTER</small></h2></div>
+          <span class="smit-live-pill"><i></i> LIVE</span>
+        </div>
+        <div class="smit-dashboard-grid">
+          <article class="smit-widget smit-calendar-widget" id="smitCalendar">
+            <div class="smit-widget-head"><div><span class="smit-kicker">SMART CALENDAR</span><h3>تقویم هوشمند</h3></div><span class="smit-widget-icon">◷</span></div>
+            <div class="smit-clock-row"><div><span class="smit-mini-label">DIGITAL CLOCK</span><strong id="smitLiveClock">--:--:--</strong><small id="smitClockMeta">---</small></div><div class="smit-today-box"><span>امروز</span><strong id="smitTodayJalali">----</strong><small id="smitTodayGregorian">----</small></div></div>
+            <div class="smit-calendar-toolbar"><button type="button" id="smitPrevMonth" aria-label="ماه قبل">‹</button><strong id="smitCalendarMonth">---</strong><button type="button" id="smitNextMonth" aria-label="ماه بعد">›</button><button type="button" id="smitCalendarToday">امروز</button></div>
+            <div class="smit-calendar-grid" id="smitCalendarGrid" aria-label="تقویم شمسی"></div>
+            <div class="smit-date-converter"><div class="smit-converter-title"><span>مبدل تاریخ</span><small>DATE CONVERTER</small></div>
+              <label>شمسی <input id="smitJalaliInput" inputmode="numeric" placeholder="۱۴۰۵/۰۸/۲۷" dir="ltr"></label>
+              <label>میلادی <input id="smitGregorianInput" inputmode="numeric" placeholder="2026/11/18" dir="ltr"></label>
+              <p id="smitConvertMessage" aria-live="polite">یکی از تاریخ‌ها را وارد کن.</p>
+            </div>
+          </article>
+          <article class="smit-widget smit-news-widget" id="smitNews">
+            <div class="smit-widget-head"><div><span class="smit-kicker">TODAY'S HEADLINES</span><h3>اخبار زنده جهان</h3></div><button type="button" class="smit-refresh-button" id="smitNewsRefresh">↻ بروزرسانی</button></div>
+            <div class="smit-news-tabs" role="tablist" aria-label="دسته‌بندی اخبار">
+              <button type="button" class="active" data-news-category="all">همه</button><button type="button" data-news-category="iran">ایران</button><button type="button" data-news-category="world">جهان</button><button type="button" data-news-category="economy">اقتصاد</button><button type="button" data-news-category="tech">تکنولوژی و AI</button><button type="button" data-news-category="sports">ورزش</button><button type="button" data-news-category="science">علم</button>
+            </div>
+            <div class="smit-news-status" id="smitNewsStatus" aria-live="polite">در حال دریافت خبرهای واقعی از منابع خبری...</div>
+            <div class="smit-news-list" id="smitNewsList"></div>
+            <p class="smit-news-disclaimer">خبرها از خوراک‌های خبری زنده دریافت می‌شوند. در صورت قطع سرویس، خبر جعلی نمایش داده نمی‌شود.</p>
+          </article>
+        </div>
+        <div class="smit-global-data-grid">
+          <article class="smit-widget smit-fx-widget" id="smitFxWidget">
+            <div class="smit-widget-head"><div><span class="smit-kicker">GLOBAL FX MARKETS</span><h3>نرخ ارزهای جهانی</h3></div><button type="button" class="smit-refresh-button" id="smitFxRefresh">↻ بروزرسانی</button></div>
+            <div class="smit-fx-rates" id="smitFxRates"><p class="smit-live-status">در حال دریافت نرخ ارز واقعی...</p></div>
+            <div class="smit-data-foot"><span id="smitFxSource">منبع: Frankfurter / ECB</span><span id="smitFxUpdated">در انتظار دریافت داده</span></div>
+            <p class="smit-news-disclaimer">نرخ‌های مرجع بین‌المللی هستند و لزوماً نرخ بازار آزاد یا صرافی محلی نیستند. نرخ ریال در صورت پشتیبانی منبع نمایش داده می‌شود.</p>
+          </article>
+          <article class="smit-widget smit-weather-widget" id="smitWeatherWidget">
+            <div class="smit-widget-head"><div><span class="smit-kicker">LIVE WORLD WEATHER</span><h3>آب‌وهوای زنده جهان</h3></div><span class="smit-live-pill"><i></i> 3D EARTH</span></div>
+            <div class="smit-weather-layout">
+              <div class="smit-globe-wrap"><div id="smitEarthGlobe" aria-label="کره زمین سه‌بعدی؛ برای انتخاب کشور روی آن کلیک کنید"></div><div class="smit-globe-hint">کره را بچرخان؛ برای مشاهده آب‌وهوا روی کشور کلیک کن</div></div>
+              <div class="smit-weather-detail" id="smitWeatherDetail" aria-live="polite">
+                <span class="smit-kicker">SELECT A COUNTRY</span><h3>یک منطقه را انتخاب کن</h3><p>با انتخاب کشور روی کره، آب‌وهوا و ساعت محلی همان منطقه نمایش داده می‌شود.</p>
+                <label class="smit-weather-search">یا جست‌وجوی شهر / کشور
+                  <div class="smit-uiverse-search smit-weather-uiverse">
+                    <span class="us-grid"></span><span class="us-glow"></span><span class="us-border"></span><span class="us-white"></span><span class="us-dark"></span><span class="us-icon" aria-hidden="true">⌕</span>
+                    <input id="smitWeatherSearch" type="search" placeholder="مثلاً Tehran, London, Tokyo" aria-label="جست‌وجوی شهر یا کشور" autocomplete="off">
+                  </div>
+                </label>
+                <button type="button" id="smitWeatherSearchBtn" class="smit-weather-search-btn">نمایش آب‌وهوا</button>
+                <div class="smit-weather-status" id="smitWeatherStatus">داده زنده پس از انتخاب مکان دریافت می‌شود.</div>
+              </div>
+            </div>
+            <div class="smit-data-foot"><span>منبع: Open-Meteo</span><span id="smitWeatherUpdated">هنوز مکانی انتخاب نشده</span></div>
+            <p class="smit-news-disclaimer">نمایش وضعیت آب‌وهوا به اتصال سرویس و دسترسی به اینترنت وابسته است؛ در صورت خطا داده ساختگی جایگزین نمی‌شود.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PERSONAL PROFILE: private-feeling personal area -->
+      <section class="smit-profile-section" id="my-profile">
+        <div class="smit-profile-header">
+          <div class="smit-profile-cover"><span class="smit-profile-cover-orb"></span><span class="smit-profile-cover-label">YOUR SPACE · SMIT AI</span></div>
+          <div class="smit-profile-identity">
+            <label class="smit-profile-avatar" for="smitProfileAvatarUpload" title="تغییر عکس پروفایل"><img id="smitProfileAvatar" alt="عکس پروفایل" src=""><span>＋</span></label>
+            <input type="file" id="smitProfileAvatarUpload" accept="image/*" hidden>
+            <div class="smit-profile-fields"><label>نام نمایشی<input id="smitProfileName" type="text" maxlength="32" placeholder="اسم دلخواهت"></label><label>درباره من<input id="smitProfileBio" type="text" maxlength="100" placeholder="چند کلمه درباره خودت..."></label><button type="button" id="smitProfileSave">ذخیره پروفایل</button></div>
+          </div>
+          <div class="smit-profile-meta"><span><b>✦</b> پروفایل شخصی</span><span>اطلاعات و هویت نمایشی تو</span></div>
+        </div>
+        <div class="smit-profile-clean-note">
+          <span class="smit-kicker">YOUR PROFILE · SMIT AI</span>
+          <h2>فضای شخصی و اطلاعات حساب</h2>
+          <p>اطلاعات نمایشی و تصویر پروفایل خودت را از همین بخش مدیریت کن.</p>
+        </div>
+      </section><!-- /#my-profile -->
+
+      <!-- FOOTER -->
+      <footer>
+        <span>© 2026 SMIT AI</span>
+        <span>BUILT TO LEARN. DESIGNED TO EVOLVE.</span>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
