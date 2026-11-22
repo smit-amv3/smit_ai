@@ -3167,7 +3167,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // SMIT ADMIN — Supabase Auth + private cloud data
   const SUPABASE_URL = "https://zbmhknkjyaloubfabcns.supabase.co";
-  const SUPABASE_ANON_KEY = "sb_publishable_cVGVrxVTGk_uP9k0o3Rv4A_L75h3311";
+  const SUPABASE_ANON_KEY = "sb_publishable_Lf5lTBsabQ6SAeX4kPT_pg_bQQNVuOO";
   const ADMIN_SECTION = "smit_admin";
   const ADMIN_SESSION_KEY = "smit_admin_session_v1";
   let adminState = null;
